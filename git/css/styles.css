@@ -13,7 +13,8 @@
 	height: 85%;
 }
 
-.copy-slide p img {
+.copy-slide p img,
+.areas-slide p img {
 	border: 0;
 	background: #FFF;
 	padding: 5px;

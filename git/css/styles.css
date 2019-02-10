@@ -12,3 +12,9 @@
 	margin-top: 0;
 	height: 85%;
 }
+
+.copy-slide p img {
+	border: 0;
+	background: #FFF;
+	padding: 5px;
+}

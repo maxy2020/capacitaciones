@@ -3,3 +3,12 @@
 	background: none;
 	box-shadow: none;
 }
+
+.vcs-slide h2 {
+	font-size: 0.9em;
+}
+
+.vcs-slide p img {
+	margin-top: 0;
+	height: 85%;
+}

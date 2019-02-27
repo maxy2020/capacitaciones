@@ -19,3 +19,13 @@
 	background: #FFF;
 	padding: 5px;
 }
+
+.basic-commands h3 {
+	font-size: 0.6em;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.basic-commands pre {
+	margin-top: 0;
+}

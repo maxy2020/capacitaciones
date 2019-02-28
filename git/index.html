@@ -89,21 +89,39 @@ $ git config --list</code></pre>
 				</section>
 				<section>
 					<section>
+						<h2>Trabajando con remotos (remote)</h2>
+					</section>
+					<section>
+						<h2>¿Qué es "origin"?</h2>
+					</section>
+					<section class="basic-commands">
+						<h3>Ver remotos configurados</h3>
+						<pre><code class="bash" data-trim>$ git remote</code></pre>
+						<h3>Ver remotos configurados + URLs</h3>
+						<pre><code class="bash" data-trim>$ git remote -v</code></pre>
+						<h3>Agregar un remote</h3>
+						<pre><code class="bash" data-trim>$ git remote add [nombre] [url]</code></pre>
+						<h3>Renombrar remoto</h3>
+						<pre><code class="bash" data-trim>$ git remote rename [nombre-actual] [nombre-nuevo]</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
 						<h2>Comandos básicos</h2>
 					</section>
 					<section class="basic-commands">
 						<h3>Actualizar repositorio local con el del server</h3>
-						<pre><code class="bash" data-trim>$ git pull</code></pre>
+						<pre><code class="bash" data-trim>$ git pull [remote] [branch]</code></pre>
 						<h3>Agregar al área de preparación (Staging Area)</h3>
 						<pre><code class="bash" data-trim>$ git add .</code></pre>
 						<h3>Confirmar lo que se encuentra en área de preparación</h3>
 						<pre><code class="bash" data-trim>$ git commit -a(opcional) -m "Mensaje del commit" | --amend</code></pre>
 						<h3>Actualizar el server con el contenido local</h3>
-						<pre><code class="bash" data-trim>$ git push</code></pre>
+						<pre><code class="bash" data-trim>$ git push -u(opcional) [remote] [branch]</code></pre>
 					</section>
 					<section class="basic-commands">
 						<h3>Actualizar repositorio local</h3>
-						<pre><code class="bash" data-trim>$ git fetch</code></pre>
+						<pre><code class="bash" data-trim>$ git fetch [remote]</code></pre>
 						<h3>Estado actual de tu area de trabajo con respecto al server</h3>
 						<pre><code class="bash" data-trim>$ git status (-s | --short)</code></pre>
 						<h3>Ver lineas modificadas o eliminadas</h3>
@@ -114,6 +132,7 @@ $ git config --list</code></pre>
 						<pre><code class="bash" data-trim>$ git log (-p | -2 | --stat | --graph | --oneline)</code></pre>
 						<h3>Volver archivos al estado inicial</h3>
 						<pre><code class="bash" data-trim>$ git checkout .</code></pre>
+						<pre><code class="bash" data-trim>$ git checkout -- file</code></pre>
 						<h3>Deshacer archivos preparados para confirmar</h3>
 						<pre><code class="bash" data-trim>$ git reset HEAD .</code></pre>
 					</section>

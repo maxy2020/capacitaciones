@@ -93,15 +93,16 @@ $ git config --list</code></pre>
 					</section>
 					<section>
 						<h2>¿Qué es "origin"?</h2>
+						<p class="fragment">Es el remote de donde se obtuvo el repo, ademas es el nombre por default que asigna git</p>
 					</section>
 					<section class="basic-commands">
-						<h3>Ver remotos configurados</h3>
+						<h3>Ver remotes configurados</h3>
 						<pre><code class="bash" data-trim>$ git remote</code></pre>
-						<h3>Ver remotos configurados + URLs</h3>
+						<h3>Ver remotes configurados + URLs</h3>
 						<pre><code class="bash" data-trim>$ git remote -v</code></pre>
 						<h3>Agregar un remote</h3>
 						<pre><code class="bash" data-trim>$ git remote add [nombre] [url]</code></pre>
-						<h3>Renombrar remoto</h3>
+						<h3>Renombrar un remote</h3>
 						<pre><code class="bash" data-trim>$ git remote rename [nombre-actual] [nombre-nuevo]</code></pre>
 					</section>
 				</section>
@@ -135,6 +136,23 @@ $ git config --list</code></pre>
 						<pre><code class="bash" data-trim>$ git checkout -- file</code></pre>
 						<h3>Deshacer archivos preparados para confirmar</h3>
 						<pre><code class="bash" data-trim>$ git reset HEAD .</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Alias</h2>
+						<p>En git se permite establecer tanto a los comandos simples como complejos alias y así evitar que sea necesario escribirlos por completo</p>
+					</section>
+					<section>
+						<h3>Como declararlos</h3>
+						<pre><code class="bash" data-trim>$ git config --global alias.co checkout</code></pre>
+						<pre><code class="bash" data-trim>$ git config --global alias.br branch</code></pre>
+						<pre><code class="bash" data-trim>$ git config --global alias.st status</code></pre>
+					</section>
+					<section>
+						<h3>También es posible</h3>
+						<pre><code class="bash" data-trim>$ git config --global alias.unstage 'reset HEAD --'</code></pre>
+						<pre><code class="bash" data-trim>$ git config --global alias.last 'log -1 HEAD'</code></pre>
 					</section>
 				</section>
 			</div>

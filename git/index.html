@@ -57,7 +57,7 @@
 					</section>
 				</section>
 				<section>
-					<section>
+					<section class="local-slide">
 						<h2>La mayoría de acciones son locales</h2>
 						<p>Excepto las acciones de obtener datos del servidor o actualizar el servidor, son todas locales</p>
 					</section>
@@ -73,6 +73,10 @@
 						<h2>Usuario</h2>
 						<pre><code class="bash" data-trim>$ git config --global user.name "Maxx"
 $ git config --global user.email maximiliano@fizzmod.com</code></pre>
+					</section>
+					<section>
+						<h2>Por qué --global</h2>
+						<p class="fragment">Esto hace que toda configuración sea para el usuario actual del sistema</p>
 					</section>
 					<section>
 						<h2>Extra pero útil</h2>
@@ -130,7 +134,7 @@ $ git config --list</code></pre>
 					</section>
 					<section class="basic-commands">
 						<h3>Ver historial de confirmaciones</h3>
-						<pre><code class="bash" data-trim>$ git log (-p | -2 | --stat | --graph | --oneline)</code></pre>
+						<pre><code class="bash" data-trim>$ git log (-p | -2 | --stat | --graph | --oneline | --decorate)</code></pre>
 						<h3>Volver archivos al estado inicial</h3>
 						<pre><code class="bash" data-trim>$ git checkout .</code></pre>
 						<pre><code class="bash" data-trim>$ git checkout -- file</code></pre>
@@ -150,9 +154,17 @@ $ git config --list</code></pre>
 						<pre><code class="bash" data-trim>$ git config --global alias.st status</code></pre>
 					</section>
 					<section>
-						<h3>También es posible</h3>
+						<h3>Otros ejemplos</h3>
 						<pre><code class="bash" data-trim>$ git config --global alias.unstage 'reset HEAD --'</code></pre>
 						<pre><code class="bash" data-trim>$ git config --global alias.last 'log -1 HEAD'</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Ramificaciones (Branches)</h2>
+					</section>
+					<section>
+
 					</section>
 				</section>
 			</div>

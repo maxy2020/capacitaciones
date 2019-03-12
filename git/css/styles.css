@@ -20,6 +20,10 @@
 	padding: 5px;
 }
 
+.local-slide h2 {
+	font-size: 1.3em;
+}
+
 .basic-commands h3 {
 	font-size: 0.6em;
 	text-align: left;

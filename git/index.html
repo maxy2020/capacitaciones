@@ -80,7 +80,7 @@ $ git config --global user.email maximiliano@fizzmod.com</code></pre>
 					</section>
 					<section>
 						<h2>Extra pero útil</h2>
-						<pre><code class="bash" data-trim>$ git config --global credential.helper cache
+						<pre><code class="bash" data-trim>$ git config --global credential.helper 'cache --[options]'
 $ git config --list</code></pre>
 					</section>
 					<section class="repo-slide">
@@ -164,7 +164,66 @@ $ git config --list</code></pre>
 						<h2>Ramificaciones (Branches)</h2>
 					</section>
 					<section>
-
+						<h3>¿Qué es una rama (Branch)?</h3>
+						<p>Es un puntero móvil apuntado a un commit particular</p>
+					</section>
+					<section>
+						<h3>Como crear una</h3>
+						<pre><code class="bash" data-trim>$ git branch [nombre-branch]'</code></pre>
+						<p>tener en cuenta que este comando solo crea la branch</p>
+						<h3>Listar las branches</h3>
+						<pre><code class="bash" data-trim>$ git branch (-v)'</code></pre>
+					</section>
+					<section>
+						<h3>¿Qué es HEAD?</h3>
+						<p class="fragment">Es el puntero especial que utiliza git para saber en que branch estas actualmente de forma local</p>
+					</section>
+					<section class="branchs-example">
+						<p>Como resultado de crear una branch "testing" vamos a obtener la siguiente estructura</p>
+						<p><img src="img/head-to-master.png" alt="Ejemplo de branchs"></p>
+					</section>
+					<section>
+						<h3>Como realizamos el cambio de branch...</h3>
+						<pre><code class="bash" data-trim>$ git checkout [nombre-branch]'</code></pre>
+					</section>
+					<section class="branchs-example">
+						<p>Si el checkout es a "testing" va a ocurrir lo siguiente</p>
+						<p><img src="img/head-to-testing.png" alt="Ejemplo de branchs"></p>
+					</section>
+					<section>
+						<p>repetir los pasos anteriores pero en un solo comando</p>
+						<pre><code class="bash" data-trim>$ git checkout -b [nombre-branch]'</code></pre>
+						<p>esta es la forma de resumir la creación de la branch y cambiar el HEAD a la nueva</p>
+					</section>
+					<section>
+						<h3>Incorporar cambios de otra branch</h3>
+						<pre><code class="bash" data-trim>$ git merge [nombre-branch]'</code></pre>
+						<p>este comando va a hacer un merge de [nombre-branch] en el HEAD actual</p>
+					</section>
+					<section>
+						<p><img src="img/merge1.png" alt="Ejemplo de merge"></p>
+						<p><img src="img/merge2.png" alt="Ejemplo de merge"></p>
+					</section>
+					<section>
+						<p>Ver branches que se encuentran o no en la actual (HEAD)</p>
+						<pre><code class="bash" data-trim>$ git branch --merged'</code></pre>
+						<pre><code class="bash" data-trim>$ git branch --no-merged'</code></pre>
+						<p>Ver en cuales se encuentra la actual</p>
+						<pre><code class="bash" data-trim>$ git branch --contains'</code></pre>
+					</section>
+					<section>
+						<h3>Borrar banch</h3>
+						<p>Localmente:</p>
+						<pre><code class="bash" data-trim>$ git branch -d [nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git branch -D [nombre-branch]'</code></pre>
+						<p>En el servidor (remote):</p>
+						<pre><code class="bash" data-trim>$ git push [remote] --delete [nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git push [remote] :[nombre-branch]'</code></pre>
+					</section>
+					<section>
+						<h3>Trabajando Branch + Remote</h3>
+						<pre><code class="bash" data-trim>$ git branch -u [remote]/[nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git branch --set-upstream-to [remote]/[nombre-branch]'</code></pre>
 					</section>
 				</section>
 			</div>

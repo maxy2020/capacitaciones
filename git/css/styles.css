@@ -14,7 +14,8 @@
 }
 
 .copy-slide p img,
-.areas-slide p img {
+.areas-slide p img,
+.branchs-example p img {
 	border: 0;
 	background: #FFF;
 	padding: 5px;

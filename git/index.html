@@ -108,6 +108,8 @@ $ git config --list</code></pre>
 						<pre><code class="bash" data-trim>$ git remote add [nombre] [url]</code></pre>
 						<h3>Renombrar un remote</h3>
 						<pre><code class="bash" data-trim>$ git remote rename [nombre-actual] [nombre-nuevo]</code></pre>
+						<h3>Ver mas información sobre un remote</h3>
+						<pre><code class="bash" data-trim>$ git remote show [nombre]</code></pre>
 					</section>
 				</section>
 				<section>
@@ -169,7 +171,7 @@ $ git config --list</code></pre>
 					</section>
 					<section>
 						<h3>Como crear una</h3>
-						<pre><code class="bash" data-trim>$ git branch [nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git branch [nombre-branch]</code></pre>
 						<p>tener en cuenta que este comando solo crea la branch</p>
 						<h3>Listar las branches</h3>
 						<pre><code class="bash" data-trim>$ git branch (-v)'</code></pre>
@@ -184,7 +186,7 @@ $ git config --list</code></pre>
 					</section>
 					<section>
 						<h3>Como realizamos el cambio de branch...</h3>
-						<pre><code class="bash" data-trim>$ git checkout [nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git checkout [nombre-branch]</code></pre>
 					</section>
 					<section class="branchs-example">
 						<p>Si el checkout es a "testing" va a ocurrir lo siguiente</p>
@@ -192,12 +194,12 @@ $ git config --list</code></pre>
 					</section>
 					<section>
 						<p>repetir los pasos anteriores pero en un solo comando</p>
-						<pre><code class="bash" data-trim>$ git checkout -b [nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git checkout -b [nombre-branch]</code></pre>
 						<p>esta es la forma de resumir la creación de la branch y cambiar el HEAD a la nueva</p>
 					</section>
 					<section>
 						<h3>Incorporar cambios de otra branch</h3>
-						<pre><code class="bash" data-trim>$ git merge [nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git merge [nombre-branch]</code></pre>
 						<p>este comando va a hacer un merge de [nombre-branch] en el HEAD actual</p>
 					</section>
 					<section>
@@ -214,16 +216,42 @@ $ git config --list</code></pre>
 					<section>
 						<h3>Borrar banch</h3>
 						<p>Localmente:</p>
-						<pre><code class="bash" data-trim>$ git branch -d [nombre-branch]'</code></pre>
-						<pre><code class="bash" data-trim>$ git branch -D [nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git branch -d [nombre-branch]</code></pre>
+						<pre><code class="bash" data-trim>$ git branch -D [nombre-branch]</code></pre>
 						<p>En el servidor (remote):</p>
-						<pre><code class="bash" data-trim>$ git push [remote] --delete [nombre-branch]'</code></pre>
-						<pre><code class="bash" data-trim>$ git push [remote] :[nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git push [remote] --delete [nombre-branch]</code></pre>
+						<pre><code class="bash" data-trim>$ git push [remote] :[nombre-branch]</code></pre>
 					</section>
 					<section>
 						<h3>Trabajando Branch + Remote</h3>
-						<pre><code class="bash" data-trim>$ git branch -u [remote]/[nombre-branch]'</code></pre>
-						<pre><code class="bash" data-trim>$ git branch --set-upstream-to [remote]/[nombre-branch]'</code></pre>
+						<pre><code class="bash" data-trim>$ git branch -u [remote]/[nombre-branch]</code></pre>
+						<pre><code class="bash" data-trim>$ git branch --set-upstream-to [remote]/[nombre-branch]</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>DLC <strike>$59.99</strike></h2>
+					</section>
+					<section>
+						<p>Branch "master" y remote "origin" no tienen nada de especial ni reservado solo existen en la mayoría de proyectos dado que son los default que genera GIT</p>
+					</section>
+					<section>
+						<p>Así como existe git add</p>
+						<pre><code class="bash" data-trim>$ git rm [archivo]</code></pre>
+						<pre><code class="bash" data-trim>$ git mv [archivo fuente] [archivo destino]</code></pre>
+					</section>
+					<section>
+						<p>En git es posible hacer el commit sin declarar el mensaje con "-m", para esto el archivo generado al terminar el commit va a asumir que el mensaje es la primer linea, lo dado luego de la primer linea ya es una descripción del mismo</p>
+					</section>
+					<section>
+						<h3>Existen dos tipos de branches</h3>
+						<p>Ramas de Largo Recorrido (Long-Running Branches)</p>
+						<p>Ramas Puntuales (Topic Branches)</p>
+						<p><img src="img/type-branches.png" alt="Tipos de branches"></p>
+					</section>
+					<section>
+						<h3>¿Cansado de nano?</h3>
+						<pre><code class="bash" data-trim>git config --global core.editor [super-editor-mejor-que-nano]</code></pre>
 					</section>
 				</section>
 			</div>
@@ -233,8 +261,3 @@ $ git config --list</code></pre>
 		</script>
 	</body>
 </html>
-
-<!--
-	Extras
-		cambiar editor por default git config --global core.editor emacs
--->

@@ -120,7 +120,7 @@ $ git config --list</code></pre>
 						<h3>Actualizar repositorio local con el del server</h3>
 						<pre><code class="bash" data-trim>$ git pull [remote] [branch]</code></pre>
 						<h3>Agregar al área de preparación (Staging Area)</h3>
-						<pre><code class="bash" data-trim>$ git add [files]</code></pre>
+						<pre><code class="bash" data-trim>$ git add [archivo]</code></pre>
 						<h3>Confirmar lo que se encuentra en área de preparación</h3>
 						<pre><code class="bash" data-trim>$ git commit -m "Mensaje del commit" | --amend</code></pre>
 						<h3>Actualizar el server con el contenido local</h3>
@@ -202,8 +202,10 @@ $ git config --list</code></pre>
 						<pre><code class="bash" data-trim>$ git merge [nombre-branch]</code></pre>
 						<p>este comando va a hacer un merge de [nombre-branch] en el HEAD actual</p>
 					</section>
-					<section>
+					<section class="img-merge">
 						<p><img src="img/merge1.png" alt="Ejemplo de merge"></p>
+					</section>
+					<section class="img-merge">
 						<p><img src="img/merge2.png" alt="Ejemplo de merge"></p>
 					</section>
 					<section>
@@ -230,6 +232,28 @@ $ git config --list</code></pre>
 				</section>
 				<section>
 					<section>
+						<h2>Ignorar archivos</h2>
+						<p>Si creamos el archivo ".gitignore" no permitirá ignorar todo lo declarado en el mismo</p>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>Las lineas en blanco o que comiencen con # son ignoradas</p>
+							</li>
+							<li>
+								<p>Acepta patrón glob estándar</p>
+							</li>
+							<li>
+								<p>Los patrones pueden terminar en barra para especificar directorios</p>
+							</li>
+							<li>
+								<p>Los patrones pueden ser negados con signo de exclamación (!)</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
 						<h2>DLC <strike>$59.99</strike></h2>
 					</section>
 					<section>
@@ -252,20 +276,6 @@ $ git config --list</code></pre>
 					<section>
 						<h3>¿Cansado de nano?</h3>
 						<pre><code class="bash" data-trim>git config --global core.editor [super-editor-mejor-que-nano]</code></pre>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Ignorar archivos</h2>
-						<p>Si creamos el archivo ".gitignore" no permitirá ignorar todo lo declarado en el mismo</p>
-						<ul>
-							<li>
-								<p>Las lineas en blanco o que comiencen con # son ignoradas</p>
-								<p>Acepta patrón glob estándar</p>
-								<p>Los patrones pueden terminar en barra para especificar directorios</p>
-								<p>Los patrones pueden ser negados con signo de exclamación (!)</p>
-							</li>
-						</ul>
 					</section>
 				</section>
 				<section>

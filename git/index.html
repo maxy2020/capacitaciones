@@ -71,7 +71,7 @@
 					</section>
 					<section>
 						<h2>Usuario</h2>
-						<pre><code class="bash" data-trim>$ git config --global user.name "Maxx"
+						<pre><code class="bash" data-trim>$ git config --global user.name "Maximiliano Danelutti"
 $ git config --global user.email maximiliano@fizzmod.com</code></pre>
 					</section>
 					<section>
@@ -120,9 +120,9 @@ $ git config --list</code></pre>
 						<h3>Actualizar repositorio local con el del server</h3>
 						<pre><code class="bash" data-trim>$ git pull [remote] [branch]</code></pre>
 						<h3>Agregar al área de preparación (Staging Area)</h3>
-						<pre><code class="bash" data-trim>$ git add .</code></pre>
+						<pre><code class="bash" data-trim>$ git add [files]</code></pre>
 						<h3>Confirmar lo que se encuentra en área de preparación</h3>
-						<pre><code class="bash" data-trim>$ git commit -a(opcional) -m "Mensaje del commit" | --amend</code></pre>
+						<pre><code class="bash" data-trim>$ git commit -m "Mensaje del commit" | --amend</code></pre>
 						<h3>Actualizar el server con el contenido local</h3>
 						<pre><code class="bash" data-trim>$ git push -u(opcional) [remote] [branch]</code></pre>
 					</section>
@@ -174,7 +174,7 @@ $ git config --list</code></pre>
 						<pre><code class="bash" data-trim>$ git branch [nombre-branch]</code></pre>
 						<p>tener en cuenta que este comando solo crea la branch</p>
 						<h3>Listar las branches</h3>
-						<pre><code class="bash" data-trim>$ git branch (-v)'</code></pre>
+						<pre><code class="bash" data-trim>$ git branch (-v)</code></pre>
 					</section>
 					<section>
 						<h3>¿Qué es HEAD?</h3>
@@ -208,10 +208,10 @@ $ git config --list</code></pre>
 					</section>
 					<section>
 						<p>Ver branches que se encuentran o no en la actual (HEAD)</p>
-						<pre><code class="bash" data-trim>$ git branch --merged'</code></pre>
-						<pre><code class="bash" data-trim>$ git branch --no-merged'</code></pre>
+						<pre><code class="bash" data-trim>$ git branch --merged</code></pre>
+						<pre><code class="bash" data-trim>$ git branch --no-merged</code></pre>
 						<p>Ver en cuales se encuentra la actual</p>
-						<pre><code class="bash" data-trim>$ git branch --contains'</code></pre>
+						<pre><code class="bash" data-trim>$ git branch --contains</code></pre>
 					</section>
 					<section>
 						<h3>Borrar banch</h3>
@@ -253,6 +253,9 @@ $ git config --list</code></pre>
 						<h3>¿Cansado de nano?</h3>
 						<pre><code class="bash" data-trim>git config --global core.editor [super-editor-mejor-que-nano]</code></pre>
 					</section>
+				</section>
+				<section>
+					<h2>¿Consultas?</h2>
 				</section>
 			</div>
 		</div>

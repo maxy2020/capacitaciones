@@ -1,6 +1,5 @@
 # Capacitaciones
 
-
 ## GIT
 * [Capacitación]()
 * [Preguntas]()
